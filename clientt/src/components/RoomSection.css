@@ -1,0 +1,24 @@
+/* client/src/components/RoomSection.css */
+.RoomSection {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.RoomSection h2 {
+  margin-bottom: 10px;
+}
+
+.RoomSection ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.RoomSection ul li {
+  margin-bottom: 5px;
+}
+
+.ChatInterface {
+  margin-top: 20px;
+}

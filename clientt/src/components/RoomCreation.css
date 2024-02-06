@@ -1,0 +1,19 @@
+/* client/src/components/RoomCreation.css */
+h2 {
+  font-size: 1.5em;
+  margin-bottom: 16px;
+}
+
+button {
+  background-color: #3498db;
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+  border: none;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+/* Add more styling as needed */
