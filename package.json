@@ -3,9 +3,12 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "start": "node server/server.js",
+    "start": "react-app-rewired start",
     "client": "cd client && npm start",
-    "dev": "concurrently \"npm run start\" \"npm run client\""
+    "dev": "concurrently \"npm run start\" \"npm run client\"",
+    "postinstall": "cp -r node_modules/ace-builds/src-noconflict public/ace-builds",
+    "build": "react-app-rewired build",
+    "test": "react-app-rewired test"
   },
   "dependencies": {
     "cors": "^2.8.5",

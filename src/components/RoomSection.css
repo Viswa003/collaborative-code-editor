@@ -1,0 +1,213 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4; /* Light background for contrast */
+    margin: 0;
+    padding: 0;
+}
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  height: 100%; /* Ensure body and html take full height */
+  overflow: hidden; /* Prevent scrolling */
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* General Styles */
+body, html {
+    height: 100%; /* Ensure body and html take full height */
+    margin: 0; /* Remove default margin */
+    overflow: hidden; /* Prevent scrolling */
+}
+
+/* Room Section Styles */
+.room-section {
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /* Full height */
+}
+
+/* Header Styles */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #2c3e50; /* Darker background for header */
+    color: white;
+}
+
+.header-buttons button {
+    background-color: #007bff; /* Button color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.header-buttons button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
+/* Content Styles */
+.content {
+    display: flex;
+    flex: 1; /* Take remaining space */
+}
+
+/* Left Panel (Participants) */
+.left-panel {
+    width: 25%; /* 25% width for participants */
+    background-color: #2c3e50; /* Darker background for contrast */
+    color: white;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+.participants {
+    background-color: #34495e; /* Slightly lighter for participants */
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    overflow-y: auto; /* Allow scrolling if too many participants */
+}
+
+.participants h3 {
+    margin: 0 0 10px;
+    font-size: 1.2em;
+}
+
+.participants ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.participants li {
+    padding: 8px;
+    border-bottom: 1px solid #2c3e50;
+    transition: background 0.3s;
+}
+
+.participants li:hover {
+    background-color: #3b5998; /* Highlight on hover */
+}
+
+/* Middle Panel (Code Editor) */
+.middle-panel {
+    width: 300%; /* 50% width for code editor */
+    padding: 10px;
+    background-color: #ecf0f1; /* Light background for code editor */
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.language-selector {
+    margin-bottom: 10px; /* Space between selector and editor */
+}
+
+.language-selector select {
+    padding: 10px;
+    border: 1px solid #bdc3c7;
+    border-radius: 5px;
+}
+
+/* Right Panel (Chat Interface) */
+.right-panel {
+    width: 10%; /* Keep the width for the chat */
+    background-color: #ffffff; /* White background for chat */
+    padding: 10px; /* Reduced padding */
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    padding-right: 0px;
+}
+
+.chat-interface {
+    flex: 1; /* Take remaining space */
+    display: flex;
+    width:250px;
+    flex-direction: column;
+    padding-right: 0px;
+}
+
+.chat-messages {
+    flex: 0 0 20%; /* Set a very small height for the messages area */
+    overflow-y: auto; /* Scrollable */
+    padding: 5px; /* Reduced padding */
+    border: 1px solid #bdc3c7;
+    border-radius: 5px;
+    background-color: #f2f6ff; /* Light gray for messages */
+}
+.chat-messages {
+  overflow-y: auto; /* Enable vertical scrolling */
+  padding: 5px; /* Reduced padding */
+  border: 1px solid #bdc3c7;
+  border-radius: 5px;
+  background-color: #f9f9f9; /* Light gray for messages */
+  max-height: 680px; /* Set a maximum height for the messages area */
+}
+
+.message {
+    padding: 3px; /* Further reduced padding */
+    border-radius: 5px;
+    margin: 2px 0; /* Further reduced margin */
+    max-width: 75%; /* Slightly narrower message bubbles */
+    color: #000000;
+}
+
+.message.sent {
+    background-color: #dcf8c6; /* Light green for sent messages */
+    align-self: flex-end; /* Align to the right */
+}
+
+.message.received {
+    background-color: #ffffff; /* White for received messages */
+    align-self: flex-start; /* Align to the left */
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #007bff; /* Bootstrap primary color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column; /* Stack panels on smaller screens */
+    }
+
+    .left-panel, .middle-panel, .right-panel {
+        width: 100%; /* Full width on mobile */
+        border-right: none; /* Remove divider */
+    }
+}

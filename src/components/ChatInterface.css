@@ -1,0 +1,50 @@
+/* Chat Interface Styles */
+.chat-interface {
+    flex: 1; /* Take remaining space */
+    display: flex;
+    flex-direction: column;
+}
+
+.chat-messages {
+    flex: 1; /* Take remaining space */
+    overflow-y: auto; /* Enable vertical scrolling */
+    padding: 5px; /* Reduced padding */
+    border: 1px solid #bdc3c7;
+    border-radius: 5px;
+    background-color: #f9f9f9; /* Light gray for messages */
+    max-height: 400px; /* Set a maximum height for the messages area */
+}
+
+/* Input Container */
+.chat-input-container {
+    display: flex; /* Align input and button side by side */
+    margin-top: 10px; /* Space above the input */
+}
+
+/* Input Box */
+.chat-input {
+    flex: 1; /* Take remaining space */
+    padding: 10px; /* Padding for input */
+    border: 1px solid #bdc3c7;
+    border-radius: 5px; /* Rounded corners */
+    margin-right: 10px; /* Space between input and button */
+}
+
+/* Send Button */
+.send-button {
+    background-color: #007bff; /* Button color */
+    color: white;
+    border: none;
+    border-radius: 50%; /* Make it round */
+    width: 40px; /* Width of the button */
+    height: 40px; /* Height of the button */
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2em; /* Size of the send icon */
+}
+
+.send-button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}

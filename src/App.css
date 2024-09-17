@@ -1,0 +1,152 @@
+/* App.css */
+.App {
+  font-family: Arial, sans-serif;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-size: 24px;
+}
+
+/* UserAuthenticationForm.css */
+.auth-form-container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.auth-form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.auth-form button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.toggle-auth-mode {
+  background: none;
+  border: none;
+  color: #007bff;
+  cursor: pointer;
+}
+
+/* RoomOptions.css */
+.room-options-container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.create-room, .join-room, .available-rooms {
+  margin-bottom: 20px;
+}
+
+.room-options-container input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.room-options-container button {
+  padding: 10px 20px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.logout-button {
+  background-color: #dc3545;
+}
+
+/* RoomSection.css */
+.room-section {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.room-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #f8f9fa;
+}
+
+.room-content {
+  display: flex;
+  flex: 1;
+  overflow: hidden;
+}
+
+.left-panel {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid #ccc;
+}
+
+.right-panel {
+  width: 70%;
+}
+
+/* Participants.css */
+.participants {
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.participants ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* ChatInterface.css */
+.chat-interface {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.chat-messages {
+  flex: 1;
+  overflow-y: auto;
+  padding: 10px;
+}
+
+.chat-input {
+  display: flex;
+  padding: 10px;
+}
+
+.chat-input input {
+  flex: 1;
+  padding: 5px;
+}
+
+.chat-input button {
+  padding: 5px 10px;
+  margin-left: 5px;
+}
+
+/* CodeEditor.css */
+.code-editor {
+  height: 100%;
+}
